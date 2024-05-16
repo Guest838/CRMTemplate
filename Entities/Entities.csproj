@@ -1,10 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Setting2.cs" />
+    <Compile Include="Dish.cs" />
+    <Compile Include="Season.cs" />
+    <Compile Include="Country.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="User.cs" />

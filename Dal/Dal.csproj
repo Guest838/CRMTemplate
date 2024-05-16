@@ -1,14 +1,31 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BaseDal.cs" />
+    <Compile Include="DbModels\CalorieCount.cs" />
+    <Compile Include="DbModels\CaloriePrice.cs" />
+    <Compile Include="DbModels\CookingWay.cs" />
+    <Compile Include="DbModels\Country.cs" />
     <Compile Include="DbModels\DefaultDbContext.cs" />
+    <Compile Include="DbModels\Dish.cs" />
+    <Compile Include="DbModels\Feedback.cs" />
+    <Compile Include="DbModels\GeoMenu.cs" />
+    <Compile Include="DbModels\GroupDish.cs" />
+    <Compile Include="DbModels\ModDish.cs" />
+    <Compile Include="DbModels\NumberRecipesByGroup.cs" />
+    <Compile Include="DbModels\Product.cs" />
+    <Compile Include="DbModels\Recipe.cs" />
+    <Compile Include="DbModels\RecipeCheck.cs" />
+    <Compile Include="DbModels\Season.cs" />
     <Compile Include="DbModels\User.cs" />
     <Compile Include="OrderedQueryableVisitor.cs" />
     <Compile Include="UsersDal.cs" />
+    <Compile Include="DishDal.cs" />
+    <Compile Include="SeasonDal.cs" />
+    <Compile Include="CountryDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Humanizer" Version="2.14.1" />

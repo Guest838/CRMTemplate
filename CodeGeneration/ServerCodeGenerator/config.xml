@@ -2,7 +2,13 @@
 <configuration>
 	<generationSettings solutionFolderPath="..\..\..\..\..\" existingFilesProcessMode="Overwrite" maxLineWidth="120"/>
 	<entities>
-		<!--<entity name="Client">
+		<entity name="Dish">
+		</entity>
+		<entity name="Season">
+		</entity>
+		<entity name="Country">
+		</entity>
+		<!--<entity name="Users">
 			<properties>
 				<property dbName="RegistrationStatusId" entityName="RegistrationStatus" entityType="Common.Enums.ClientRegistrationStatus, Common"/>
 			</properties>

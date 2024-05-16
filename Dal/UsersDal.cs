@@ -78,7 +78,7 @@ namespace Dal
 		}
 
 		public async Task<Entities.User> GetAsync(string login)
-		{
+		{	
 			return (await GetAsync(item => item.Login == login)).FirstOrDefault();
 		}
 	}

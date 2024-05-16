@@ -46,13 +46,27 @@
 								Главная
 							</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link @(Url.GetController() == "Dish" ? "active" : "")" asp-controller="Dish" asp-action="Index">
+								Блюда
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @(Url.GetController() == "Country" ? "active" : "")" asp-controller="Country" asp-action="Index">
+								Страны
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link @(Url.GetController() == "Season" ? "active" : "")" asp-controller="Season" asp-action="Index">
+								Сезоны
+							</a>
+						</li>
+
+
 						@if (User.Identity.IsAuthenticated)
 						{
-							<li class="nav-item">
-								<a class="nav-link @(Url.GetController() == "Users" ? "active" : "")" asp-controller="Users" asp-action="Index">
-									Пользователи
-								</a>
-							</li>
+							
+
 						}
 					</ul>
 				</div>

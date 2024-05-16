@@ -16,6 +16,5 @@ create table Users
 )
 
 insert into Users values
-('dev', '', 0, 0, GETDATE()),
-('admin', '', 1, 0, GETDATE());
+('admin', 'bcea93fbf1500b9e8e5ae7792c3806f6839fdcc8782f310ae00e08244fc64f09a6bf8c34b5c628cb49ad163c02c1d3959dac0936434ad6f19a4aacd107b82cfb', 1, 0, GETDATE());
 go

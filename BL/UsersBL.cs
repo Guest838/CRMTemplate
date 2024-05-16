@@ -60,6 +60,8 @@ namespace BL
 		public async Task<User> VerifyPasswordAsync(string login, string password)
 		{
 			var user = await GetAsync(login);
+			System.Console.WriteLine(Helpers.GetPasswordHash(password));
+
 			return user != null && user.Password == Helpers.GetPasswordHash(password) ? user : null;
 		}
 	}
